@@ -12,7 +12,6 @@ function main() {
     .version(pkg.version)
     .option('-p, --port <port>', 'Port to listen on.')
     .option('-d, --dir <path>', 'Directory containing docsets to use.')
-    .option('-d, --dir <path>', 'Directory containing docsets to use.')
     .parse(process.argv);
 
     if(!_cli.port || !_cli.dir) {
