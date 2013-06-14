@@ -16,6 +16,9 @@
     "directories" : {
         "lib" : "./lib"
     },
+    "bin": {
+        "doks-server": "./bin/doks-server"
+    },
     "dependencies" : {
         "underscore": "1.4.4",
         "q": "0.9.4",
