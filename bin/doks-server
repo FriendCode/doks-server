@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+var _cli = require('commander');
+
+var pkg = require('../package.json');
+
+var createServer = require('../').server.createServer;
+
+
+function main() {
+    _cli
+    .version(pkg.version)
+    .option('-p, --port <port>', 'Port to listen on.')
+    .option('-d, --dir <path>', 'Directory containing docsets to use.')
+    .option('-d, --dir <path>', 'Directory containing docsets to use.')
+    .parse(process.argv);
+
+    if(!_cli.port || !_cli.dir) {
+        console.dir('here');
+        _cli.emit('--help');
+        return;
+    }
+
+    // Run server
+    var server = createServer(_cli.dir);
+
+    server.open()
+    .then(function() {
+        server.listen(_cli.port);
+    })
+    .done();
+}
+
+main();

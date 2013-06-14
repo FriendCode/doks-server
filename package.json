@@ -1,0 +1,44 @@
+{
+    "name": "doks-server",
+    "version": "0.0.1",
+    "description": "An API allowing to search through programming docs",
+
+    "keywords": [
+        "docs",
+        "doks",
+        "api",
+        "code",
+        "search",
+        "docset",
+        "docsets"
+    ],
+    "main" : "./index.js",
+    "directories" : {
+        "lib" : "./lib"
+    },
+    "dependencies" : {
+        "underscore": "1.4.4",
+        "q": "0.9.4",
+
+        "sqlite3": "2.1.7",
+
+        "request": "2.14.0",
+        "restify": "2.3.2",
+
+        "commander": "1.1.1"
+    },
+    "engines" : {
+        "node" : "0.8.x"
+    },
+    "engineStrict": true,
+    "author" : {
+        "name" : "Aaron O'Mullan",
+        "email" : "aaron.omullan@gmail.com",
+        "url" : "http://friendco.de"
+    },
+    "maintainer" : [
+        "Aaron O'Mullan <aaron.omullan@gmail.com>"
+    ],
+    "author": "Aaron O'Mullan",
+    "license": "BSD"
+}

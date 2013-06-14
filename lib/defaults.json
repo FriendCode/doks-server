@@ -1,0 +1,18 @@
+{
+    "typeMap": {
+        "cl": "Class",
+        "clm": "ClassMethod",
+        "clconst": "ClassConstant",
+
+        "func": "Function",
+
+        "instp": "Property",
+
+        "macro": "Macro",
+
+        "Event": "Event",
+        "Module": "Module",
+        "Service": "Service",
+        "Variable": "Variable"
+    }
+}
